@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+            /* .sticky{
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                background-color: rgb(147, 220, 220);
+
+            } */
+        .text{
+            height: 50px;
+            background-color: rgb(161, 216, 216);
+            /* width: 100%; */
+            /* border: 2px solid black; */
+            border-bottom: 2px solid green;
+            overflow: hidden;
+            font-size: 50px;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            
+            
+            
+           
+
+        }
+
+        .cent{
+            height: 100%;
+            width: 100%;
+            animation: text 4s ease-in infinite;
+        }
+@keyframes text{
+                0%{
+                     transform: translateY(0);
+                }
+
+                25%{
+                    transform: translateY(-100%);
+                }
+
+                
+                50%{
+                    transform: translateY(-200%);
+                }
+
+                
+                75%{
+                    transform: translateY(-300%);
+                }
+
+                
+                100%{
+                    transform: translateY(-400%);
+                }
+
+                
+
+
+}
+
+
+           .box  {
+                height: 100px;
+                width: 100px;
+                background-color: aqua;
+                align-content: center;
+                border-radius: 10%;
+                margin: auto;
+                text-align: center;
+                margin-top: 30px;
+                padding: 05vh;
+                border: 2px solid rgb(11, 11, 11);
+                justify-content: center; 
+                animation: scroll 3s linear ;
+                  animation-timeline: view(); 
+                 animation-range: entry 10 cover 70%;  
+                 
+
+            }
+
+            @keyframes scroll{
+                        from{
+                            opacity: 0;
+                            scale: 0.4;
+                            transform: translateX(-200px);
+                            /* clip-path: inset(100% 100% 0 0); */
+                        }
+                        to{
+                            opacity: 2;
+                            scale: 1.0;
+                            transform: translateX(10px);
+                            /* clip-path: inset(0 0 0 0); */
+
+                        }
+
+            }
+    </style>
+</head>
+<body>
+    
+    <div class="text">
+        <div class="cent">Computer</div>
+    <div class="cent">Software</div>
+    <div class="cent">Hardware</div>
+    <div class="cent">Linux</div>
+    <div class="cent">UI UX</div></div>
+
+
+    <br>
+    <div class="box">Hello</div>
+    <div class="box">Hello</div>
+    <div class="box">Hello</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+
+
+
+</body>
+</html>
